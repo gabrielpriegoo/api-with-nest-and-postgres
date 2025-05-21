@@ -26,7 +26,6 @@ export class AuthenticateController {
   ) {}
 
   @Post()
-  //   @HttpCode(201)
   @UsePipes(new ZodValidationPipe(authenticateBodySchema))
   async handle(@Body() body: AuthentitcateBodySchema) {
     const { email, password } = body;
