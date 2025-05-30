@@ -6,8 +6,8 @@ POST {{baseUrl}}/accounts
 Content-Type: application/json
 
 {
-  "name": "Gabriel",
-  "email": "gabriel@example.com",
+  "name": "Gabriel 2",
+  "email": "gabriel2@example.com",
   "password": "123456"
 }
 
@@ -18,7 +18,7 @@ POST {{baseUrl}}/sessions
 Content-Type: application/json
 
 {
-  "email": "teste4@example.com",
+  "email": "gabriel2@example.com",
   "password": "123456"
 }
 
@@ -30,7 +30,7 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Como criar uma Landing Page?",
+  "title": "Como criar uma Landing Page 2?",
   "content": "Estou tentando criar uma landing page para meu novo produto, mas não sei por onde começar. Alguém pode me dar algumas dicas?"
 }
 
