@@ -6,8 +6,8 @@ POST {{baseUrl}}/accounts
 Content-Type: application/json
 
 {
-  "name": "Teste 4",
-  "email": "teste4@example.com",
+  "name": "Gabriel",
+  "email": "gabriel@example.com",
   "password": "123456"
 }
 
@@ -30,6 +30,14 @@ Content-Type: application/json
 Authorization: Bearer {{authToken}}
 
 {
-  "title": "Qual é a capital da França?",
-  "content": "A capital da França é uma cidade famosa por sua cultura e história."
+  "title": "Como criar uma Landing Page?",
+  "content": "Estou tentando criar uma landing page para meu novo produto, mas não sei por onde começar. Alguém pode me dar algumas dicas?"
 }
+
+###
+
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=2
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
