@@ -57,12 +57,6 @@ describe('Fetch questions (E2E)', () => {
 
     expect(response.statusCode).toBe(200);
 
-    const questionOnDatabase = await prisma.question.findFirst({
-      where: {
-        title: 'New questions',
-      },
-    });
-
     expect(response.body).toEqual({
       questions: [
         expect.objectContaining({ title: 'Question 01' }),
